@@ -1,0 +1,56 @@
+@use "../lib/lib";
+@use "../lib/layout";
+
+.menu {
+  @include lib.list-reset;
+
+  &__button {
+    @include layout.align-center;
+
+    width: 200px;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.artist-section {
+  padding: 200px 0;
+
+  @include lib.bg-image("../images/Morten Harket.png", null);
+
+  &__heading {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  &__subscribers {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+
+    &__button {
+      margin: 0;
+      margin-right: lib.base-x(3);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .artist-section {
+    max-width: none;
+    padding-top: 200px;
+
+    &__heading {
+      margin-top: lib.base-x(6);
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@use "../lib/lib";
+@use "../lib/layout";
+
+.subscription-form {
+  max-width: 570px;
+  margin: 0 auto;
+
+  &__wrapper {
+    margin-bottom: lib.base-x(3);
+  }
+
+  &__input {
+    width: 100%;
+    min-width: 270px;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}
+
+.banner-section {
+  padding: 200px 0;
+  text-align: center;
+
+  @include lib.bg-image("../images/banner.png", lib.$base-dark);
+
+  &__heading {
+    margin-top: 50px;
+  }
+
+  &__text {
+    margin: lib.base-x(2) 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .subscription-form {
+    @include layout.cols(2, 1fr, lib.base-x(3));
+
+    &__wrapper {
+      margin: 0;
+    }
+
+    &__button {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .banner-section {
+    max-width: none;
+
+    &__heading {
+      margin-top: 0;
+    }
+
+    &__text {
+      margin-top: lib.base-x(4);
+    }
+  }
+}

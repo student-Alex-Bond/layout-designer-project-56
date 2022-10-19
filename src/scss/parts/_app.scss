@@ -1,0 +1,38 @@
+@use "../lib/lib";
+@use "../lib/layout";
+
+.app-section {
+  &__image {
+    display: block;
+    margin: auto;
+    margin-bottom: lib.base-x(2);
+  }
+
+  &__text {
+    margin-bottom: lib.base-x(2);
+  }
+
+  &__link {
+    padding: lib.base-x(2) lib.base-x(5);
+  }
+}
+
+@media (min-width: 768px) {
+  .app-section {
+    &__content {
+      @include layout.cols(2, 1fr) {
+        column-gap: 50px;
+      }
+    }
+
+    &__image {
+      order: 1;
+      justify-self: center;
+      margin: 0;
+    }
+
+    &__wrapper {
+      padding-top: lib.base-x(2);
+    }
+  }
+}

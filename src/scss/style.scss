@@ -1,0 +1,36 @@
+@use "general";
+@use "header";
+@use "main";
+@use "footer";
+
+@font-face {
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  font-size: 1px;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
