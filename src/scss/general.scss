@@ -1,0 +1,125 @@
+@font-face {
+  font-family: Roboto;
+  src:
+    local("Roboto Bold"),
+    local("Roboto-Bold"),
+    url("Roboto-Bold.woff2") format("woff2"),
+    url("Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src:
+    local("Roboto"),
+    local("Roboto-Regular"),
+    url("Roboto-Regular.woff2") format("woff2"),
+    url("Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $dark-gray;
+  background-color: $black;
+  margin: 0;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-gray;
+  cursor: pointer;
+}
+
+/* Главный стиль для p */
+
+.main-description {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $white;
+}
+
+/* Главный стиль для btn */
+
+.btn-transparent {
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+  background-color: transparent;
+  color: $white;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+/* Desktop Version */
+
+.desktop-h1 {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+}
+
+.desktop-h2 {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+}
+
+/* Mobile Version */
+
+@media (max-width: 576px) {
+  .desktop-h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .desktop-h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}

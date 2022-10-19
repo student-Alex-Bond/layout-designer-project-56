@@ -1,0 +1,181 @@
+@mixin pricing {
+  font-size: 64px;
+  line-height: 100%;
+  color: $white;
+}
+
+@mixin pricing-footer {
+  text-align: center;
+  font-size: 12.8px;
+  line-height: 150%;
+  color: $white;
+  margin-bottom: 64px;
+  height: 57px;
+}
+
+.pricing-value {
+  @include pricing;
+
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  text-align: center;
+}
+
+.pricing-footer {
+  @include pricing-footer;
+}
+
+/* Pricing Section */
+
+.page-pricing {
+  @include flex-center;
+}
+
+#page-pricing {
+  width: 1240px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pricing-items {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pricing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+  height: 615px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.pricing-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.bg-free {
+  background-image: url("../images/Free\ Bg.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.bg-standart {
+  background-image: url("../images/Standart\ Bg.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.bg-premium {
+  background-image: url("../images/Premium\ Bg.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.pricing-section-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.pricing-section-description {
+  margin-top: 43px;
+}
+
+.pricing-item-title {
+  @include uppercase;
+
+  margin-top: 24px;
+  margin-bottom: 200px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: $white;
+  align-self: stretch;
+  text-align: center;
+}
+
+.money-value {
+  @include uppercase;
+
+  font-size: 32px;
+  line-height: 150%;
+  color: $white;
+  margin-left: 16px;
+}
+
+.apply-btn {
+  @include uppercase;
+
+  width: 319px;
+  height: 66px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 64px;
+  padding: 20px 30px;
+}
+
+/* Laptop version */
+
+@media (max-width: 1240px) {
+  .pricing-items {
+    flex-wrap: wrap;
+  }
+
+  .pricing-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+
+/* Mobile version */
+
+@media (max-width: 1050px) {
+  .pricing-items {
+    @include flex-column-center;
+
+    gap: 30px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .pricing-item {
+    margin-right: 0;
+  }
+
+  .apply-btn {
+    width: 100%;
+    margin-bottom: 64px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-item {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  .pricing-item-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .pricing-section-title {
+    margin-bottom: 40px;
+  }
+
+  .pricing-section-description {
+    margin-top: 25px;
+  }
+}
