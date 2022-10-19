@@ -2,21 +2,24 @@
   gap: 50px;
   margin-bottom: 40px;
   color: $white;
+
   .card {
     box-sizing: border-box;
     max-width: 366.66px;
     padding: 1.5rem;
     border-radius: 1rem;
+
     &-name {
       margin-bottom: 200px;
-
       font-weight: normal;
       text-transform: uppercase;
     }
+
     .flex-start {
       display: flex;
       justify-content: flex-start;
     }
+
     &-price {
       height: 64px;
       margin: 0;
