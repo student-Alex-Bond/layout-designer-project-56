@@ -23,7 +23,6 @@
       margin-bottom: 40px;
       padding: 0;
       border: none;
-
       font-size: 64px;
       line-height: 64px;
 
@@ -40,20 +39,16 @@
       box-sizing: border-box;
       width: 100%;
       padding: 20px 30px;
-
       border: 1px solid $white;
       border-radius: 5px;
-
       color: $white;
       font-size: 16px;
-
       text-transform: uppercase;
     }
 
     &-description {
       margin-top: 64px;
       margin-bottom: 40px;
-
       font-size: 12.8px;
     }
   }
@@ -72,7 +67,6 @@
 
   .subs {
     border-radius: 1rem;
-
     background-position: top;
   }
 }

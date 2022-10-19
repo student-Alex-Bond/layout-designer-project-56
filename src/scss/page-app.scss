@@ -1,21 +1,15 @@
 .mobile-app {
   &-description {
     max-width: 600px;
-
     font-size: 16px;
 
     &-button {
       display: block;
-
       padding: 16px 40px;
-
       border: 0;
       border-radius: 32px;
-
       font-size: 12.8px;
-
       text-transform: capitalize;
-
       background-color: $light-brown;
     }
   }

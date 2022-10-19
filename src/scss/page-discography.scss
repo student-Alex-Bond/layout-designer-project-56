@@ -1,11 +1,9 @@
 .discography {
   color: $light-grey;
-
   font-size: 16px;
 
   &-catalog {
     margin-top: 48px;
-
     column-gap: 50px;
     row-gap: 25px;
   }
@@ -19,7 +17,6 @@
 
     .album-name {
       margin-top: 18px;
-
       font-size: 18px;
       line-height: 27px;
       text-transform: capitalize;
