@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+
+  color: $text-base-2;
+  font-size: 18px;
+  font-family: Roboto-Regular, sans-serif;
+  line-height: 1.5;
+
+  background-color: $bcg-base;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.a-clear {
+  color: $text-base-1;
+  text-decoration: none;
+}
+
+.cont-rel {
+  position: relative;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 20px 30px;
+
+  color: $text-base-2;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-radius: 5px;
+}
+
+@media (min-width: 1240px) {
+  h1 {
+    font-size: 60px;
+    font-family: Roboto-Bold, sans-serif;
+    line-height: 90px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 38px;
+    font-family: Roboto-Bold, sans-serif;
+    line-height: 57px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .container {
+    width: 1240px;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 30px;
+    font-family: Roboto-Bold, sans-serif;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-family: Roboto-Bold, sans-serif;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

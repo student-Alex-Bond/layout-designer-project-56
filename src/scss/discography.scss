@@ -1,0 +1,53 @@
+.discography {
+  padding-top: 100px;
+}
+
+.discography-h2 {
+  margin-bottom: 48px;
+
+  text-align: left;
+}
+
+.disco-col {
+  flex-direction: column;
+  margin-right: 50px;
+  margin-bottom: 25px;
+}
+
+.discography-info h3 {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.discography-info p {
+  font-size: 16px;
+}
+
+.disc-album-img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 18px;
+}
+
+.disco-main-flex {
+  flex-wrap: wrap;
+}
+
+.disco-col-m0 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+  .disc-album-img {
+    width: 137px;
+    height: 137px;
+  }
+
+  .discography-info h3 {
+    max-width: 137px;
+  }
+
+  .discography-info p {
+    max-width: 137px;
+  }
+}
