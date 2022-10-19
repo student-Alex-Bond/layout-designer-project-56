@@ -1,173 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/app.css">
-    <title>layout-designer-project-56 valinka</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница MusicBox Alsecode</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="flex">
-        <div class="logo flex">
-            <img src="images/logo.svg" alt="music box logo">
-            <p class="logo-text text-xs uppercase text-white">Music Box</p>
+  <header class="container">
+    <div class="white main-container flex flex-center flex-wrap">
+      <div class="flex flex-wrap align-center navigation">
+        <div class="logo flex align-center">
+          <img class="logo-image" src="images/logo.svg" alt="Logo">
+          <a href="#" class="logo-name">Music Box</a>
         </div>
-        <nav>
-            <ul class="links text-xs flex">
-                <li><a href="#" class="link header-link uppercase">Главная</a></li>
-                <li><a href="#" class="link header-link uppercase">Каталог</a></li>
-                <li><a href="#" class="link header-link uppercase">Исполнители</a></li>
-                <li><a href="#" class="link header-link uppercase">Контакты</a></li>
-            </ul>
-        </nav>        
-        <div class="search">
-            <input type="text" name="search" placeholder="Поиск...">
+        <ul class="flex">
+          <li><a href="#" class="link">Главная</a></li>
+          <li><a href="#" class="link">Каталог</a></li>
+          <li><a href="artist.html" class="link">Исполнители</a></li>
+          <li><a href="#contacts" class="link">Контакты</a></li>
+        </ul>
+      </div>
+      <input class="search-button" placeholder="ПОИСК...">
+    </div>
+  </header>
+  <main>
+    <div id="page-description" class="banner">
+      <div class="container white">
+        <h1>Онлайн музыка где угодно</h1>
+        <h2 class="text-center">Без ограничений</h2>
+        <p class="banner-offer">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <form class="banner-access">
+          <input type="text" name="name" class="banner-access-name" placeholder="Имя">
+          <input type="text" name="email" class="banner-access-email" placeholder="Email">
+          <button type="submit" href="#" class="btn banner-access-button">Получить доступ</button>
+        </form>
+      </div>
+    </div>
+    <div id="page-pricing" class="container pt-100 white">
+      <h2 class="text-center mb-48">Формы подписки</h2>
+      <div class="cards flex flex-wrap justify-center">
+        <div class="subs free-sub text-center">
+          <div class="card ">
+            <h3 class="card-name">Бесплатная</h3>
+            <p class="card-price">0 <span class="card-price-currency">руб.</span></p>
+            <a href="#" class="btn card-button">Оформить</a>
+            <p class="card-description">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции
+              музыки.
+              Присутствует реклама</p>
+          </div>
         </div>
-    </header>
 
-    <main>
-        <section id="page-description" class="banner ta-center text-white bg-center bg-cover">
-            <div class="container">
-                <h1>Онлайн музыка где угодно</h1>
-                <h2>без ограничений</h2>
-                <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-                <form class="reg-form" action="">
-                    <div class="flex">
-                        <input type="text" name="name" placeholder="Имя" class="br-radius-3 border-main-color">
-                        <input type="email" name="email" placeholder="Email" class="br-radius-3 border-main-color">
-                    </div>                
-                    <button class="btn br-radius-5 bg-green text-white uppercase" type="submit">Получить доступ</button>
-                </form>
-            </div>        
-        </section>
-
-        <section id="page-pricing" class="pricing-section container text-white">
-            <h2 class="ta-center">Формы подписки</h2>
-            <div class="pricing flex">
-                <div class="pricing-item bg-free ta-center">
-                    <h3 class="uppercase">Бесплатная</h3>
-                    <p class="pricing-value flex"><span class="value uppercase text-7">0</span> <span class="currency text-3">РУБ.</span></p>
-                    <a href="#" class="btn br-radius-5 border-white uppercase text-white">Оформить</a>
-                    <p class="pricing-footer text-sm">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
-                </div>
-                <div class="pricing-item bg-standard ta-center">
-                    <h3 class="uppercase">Стандартная</h3>
-                    <p class="pricing-value flex"><span class="value uppercase text-7">250</span> <span class="currency text-3">РУБ.</span></p>
-                    <a href="#" class="btn br-radius-5 border-white uppercase text-white">Оформить</a>
-                    <p class="pricing-footer text-sm">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
-                </div>
-                <div class="pricing-item bg-premium ta-center">
-                    <h3 class="uppercase">Премиум</h3>
-                    <p class="pricing-value flex"><span class="value uppercase text-7">500</span> <span class="currency text-3">РУБ.</span></p>
-                    <a href="#" class="btn br-radius-5 border-white uppercase text-white">Оформить</a>
-                    <p class="pricing-footer text-sm">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
-                </div>
-            </div>
-            <p class="ta-center">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
-        </section>
-
-        <section id="page-news" class="news-section container">
-            <h2 class="ta-center text-white">Последние новости</h2>
-            <div class="news-item flex">
-                <div class="news-item-img">
-                    <img src="images/Music to Be Murdered By.png" alt="Music to Be Murdered By">
-                </div>            
-                <div class="news-content">
-                    <div class="news-body">
-                        <h3 class="text-white capitalize">Music to Be Murdered By</h3>
-                        <p>Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
-                    </div>
-                    <div class="news-footer flex">
-                        <div class="news-author flex">
-                            <img src="images/avatar.png" alt="Music box avatar">
-                            <p class="author-name text-orange uppercase">Music box</p>
-                            <p class="news-item-date">17/01/2020</p>
-                        </div>
-                        <a href="#" class="link btn border-main-color br-radius-5 ta-center uppercase">К альбому</a>
-                    </div>
-                </div>            
-            </div>
-            <div class="news-item flex row-reverse">
-                <div class="news-item-img">
-                    <img src="images/Ordinary Man.png" alt="Ordinary Man">
-                </div>
-                <div class="news-content">
-                    <div class="news-body">
-                        <h3 class="text-white capitalize">Ordinary Man</h3>
-                        <p>Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
-                    </div>
-                    <div class="news-footer">
-                        <div class="news-author flex">
-                            <img src="images/avatar.png" alt="Music box avatar">
-                            <p class="author-name text-orange uppercase">Music box</p>
-                            <p class="news-item-date">24/02/2020</p>
-                        </div>
-                        <a href="#" class="link btn border-main-color br-radius-5 ta-center uppercase">К альбому</a>
-                    </div>
-                </div>            
-            </div>
-        </section>
-
-        <section id="page-app" class="app-section container">
-            <h2 class="ta-center text-white">Мобильное приложение</h2>
-            <div class="app-content">
-                <p>Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
-                <p>С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
-                <button class="btn br-radius-32 text-sm text-white bg-red">Скачать</button>
-            </div>            
-            <img src="images/iphone.png" alt="iphone">                
-        </section>
-    </main>
-
-    
-
-    <footer>
-        <div class="footer-top">
-            <div class="about">
-                <h2 class="text-white">О нас</h2>
-                <ul>
-                    <li><a href="#" class="link">История компании</a></li>
-                    <li><a href="#" class="link">Карьера</a></li>
-                    <li><a href="#" class="link">Особенности</a></li>
-                    <li><a href="#" class="link">Пресса</a></li>
-                </ul>
-            </div>
-            <div class="support">
-                <h2 class="text-white">Поддержка</h2>
-                <ul>
-                    <li><a href="#" class="link">База знаний</a></li>
-                    <li><a href="#" class="link">Тарифы</a></li>
-                    <li><a href="#" class="link">Мобильное приложение</a></li>
-                    <li><a href="#" class="link">Условия использования</a></li>
-                </ul>
-            </div>
-            <div class="contact">
-                <h2 class="text-white">Контакты</h2>
-                <a href="mailto:hello@music.box" class="link">hello@music.box</a>
-                <p>Russia, Moscow. Music Box studio</p>
-                <a href="tel:+74999999999" class="link">+ 7 499 999 99 99</a>
-            </div>
-            <div class="subscribe">
-                <h2 class="text-white">Подписывайтесь</h2>
-                <div class="social flex">
-                    <a href="#" class="google"></a>
-                    <a href="#" class="twitter"></a>
-                    <a href="#" class="facebook"></a>
-                    <a href="#" class="instagram"></a>
-                </div>
-            </div>
+        <div class="subs standard-sub text-center">
+          <div class="card ">
+            <h3 class="card-name">Стандартная</h3>
+            <p class="card-price">250 <span class="card-price-currency">руб.</span></p>
+            <a href="#" class="btn card-button">Оформить</a>
+            <p class="card-description">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции
+              музыки в среднем качестве</p>
+          </div>
         </div>
-        <hr>
-        <div class="footer-bottom">
-            <ul class="flex">
-                <li><a href="#" class="link">Магазин</a></li>
-                <li><a href="#" class="link">Обслуживание</a></li>
-                <li><a href="#" class="link">Блог</a></li>
-                <li><a href="#" class="link">Поддержка</a></li>
-                <li><a href="#" class="link">Контакты</a></li>
-            </ul>
+
+        <div class="subs premium-sub text-center">
+          <div class="card ">
+            <h3 class="card-name">Премиум</h3>
+            <p class="card-price">500 <span class="card-price-currency">руб.</span></p>
+            <a href="#" class="btn card-button">Оформить</a>
+            <p class="card-description">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки
+              в
+              высоком качестве</p>
+          </div>
         </div>
-    </footer>
+      </div>
+      <p class="extra-info">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы
+        можете
+        скачать все
+        композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+
+    </div>
+
+    <div id="page-news" class="container pt-100">
+      <h2 class="center mb-48 white text-center">Последние новости</h2>
+      <section class="news flex flex-column">
+        <div class="news-item flex justify-center">
+
+          <img class="news-item-picture" src="images/Music to Be Murdered By.png"
+            alt="Eminem - Music to Be Murdered By">
+
+          <div class="news-item-info">
+            <div class="news-body">
+              <h3 class="news-body-heading white">Music to Be Murdered By</h3>
+              <p class="news-body-text">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе.
+                На альбоме вас ждёт 20 новых треков.</p>
+            </div>
+            <div class="news-footer">
+              <div class="news-author mb-48 flex">
+                <img src="images/avatar.png" alt="author">
+                <p class="news-author-company-name">Music box</p>
+                <p>17/01/2020</p>
+              </div>
+              <a href="#" class="btn news-footer-button">К альбому</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-item flex justify-center">
+          <div class="news-item-info">
+            <div class="news-body">
+              <h3 class="news-body-heading white">Ordinary Man</h3>
+              <p class="news-body-text">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man.
+                Слушайте в числе первых на Music Box</p>
+            </div>
+            <div class="news-footer">
+              <div class="news-author mb-48 flex">
+                <img src="images/avatar.png" alt="author">
+                <p class="news-author-company-name">Music box</p>
+                <p>24/02/2020</p>
+              </div>
+              <a href="#" class="btn news-footer-button">К альбому</a>
+            </div>
+          </div>
+          <img class="news-item-picture" src="images/Ordinary Man.png" alt="Ozzy Osbourne - Ordinary Man">
+        </div>
+      </section>
+    </div>
+
+    <div id="page-app" class="container mb-100 pt-100">
+      <h2 class="mb-48 white text-center">Мобильное приложение</h2>
+      <section class="mobile-app flex">
+        <div class="mobile-app-description">
+          <div class="mobile-app-description-text">
+            <p class="mt-16">Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку
+              с любого устройства на базе
+              операционных систем Androind и iOS</p>
+            <p class="mt-16 mb-16">С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции.
+              Вы можете слушать
+              музыку даже без интернета.</p>
+          </div>
+          <a href="#" class="btn mobile-app-description-button">Скачать</a>
+        </div>
+        <img class="mobile-app-picture" src="images/iphone.png" alt="iPhone">
+      </section>
+    </div>
+  </main>
+  <footer id="contacts" class="footer light-grey bg-gradient">
+    <section class="footer-links container">
+      <div>
+        <h2 class="white mb-16 nav-heading">О нас</h2>
+        <ul>
+          <li><a href="#">История компании</a></li>
+          <li><a href="#">Карьера</a></li>
+          <li><a href="#">Особенности</a></li>
+          <li><a href="#">Пресса</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="white mb-16 nav-heading">Поддержка</h2>
+        <ul>
+          <li><a href="#">База знаний</a></li>
+          <li><a href="#page-pricing">Тарифы</a></li>
+          <li><a href="#page-app">Мобильное приложение</a></li>
+          <li><a href="#">Условия использования</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="white mb-16 nav-heading">Контакты</h2>
+        <a href="#">hello@music.box</a>
+        <p>Russia, Moscow. Music Box studio</p>
+        <a href="#">+ 7 499 999 99 99</a>
+      </div>
+
+      <div>
+        <h2 class="white mb-16 nav-heading">Подписывайтесь</h2>
+        <div class="footer-links-social-media-icons flex align-center">
+          <a href="https://www.google.com/" class="google-icon"><img src="images/Google+.png" alt="Google"></a>
+          <a href="https://twitter.com/?lang=ru" class="twitter-icon"><img src="images/Twitter.png" alt="Twitter"></a>
+          <a href="https://ru-ru.facebook.com/" class="facebook-icon"><img src="images/Facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/" class="instagram-icon"><img src="images/Instagram.png"
+              alt="Instagram"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-nav">
+      <div class="container flex footer-nav-list">
+        <a href="#">Магазин</a>
+        <a href="#">Обслуживание</a>
+        <a href="#page-news">Блог</a>
+        <a href="#">Поддержка</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </section>
+  </footer>
 </body>
+
 </html>
