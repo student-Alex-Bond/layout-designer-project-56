@@ -355,7 +355,7 @@ body {
   margin-top: 64px;
   margin-bottom: 64px;
   color: #cacaca;
-  font-size: 12.8px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -486,7 +486,7 @@ body {
 .btn-app {
   display: inline-block;
   padding: 16px 40px;
-  font-size: 12.8px;
+  font-size: 13px;
   text-transform: none;
   background-color: #95390c;
   border: none;
@@ -551,7 +551,7 @@ body {
   min-width: 200px;
   max-height: 62px;
   font-weight: 400;
-  font-size: 12.8px;
+  font-size: 13px;
   border: none;
 }
 
@@ -614,11 +614,11 @@ body {
 
 .track-info p {
   color: #cacaca;
-  font-size: 12.8px;
+  font-size: 13px;
 }
 
 .track-info h3 {
-  font-size: 12.8px;
+  font-size: 13px;
   text-transform: uppercase;
 }
 
