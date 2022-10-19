@@ -1,0 +1,150 @@
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #cacaca;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+
+  background-color: $black;
+}
+
+a {
+  width: max-content;
+
+  color: $grey;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.white {
+  color: $white;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: 0;
+  border-radius: 5px;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  font-size: $h1;
+  line-height: 90px;
+
+  @include heading;
+}
+
+h2 {
+  font-size: $h2;
+  line-height: 57px;
+
+  @include heading;
+}
+
+h3 {
+  font-size: $h3;
+  line-height: 36px;
+
+  @include heading;
+}
+
+h4 {
+  font-size: $h4;
+  line-height: 27px;
+
+  @include heading;
+}
+
+a:hover {
+  color: $white;
+
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  h1 {
+    font-size: $h1-mobile;
+    line-height: 45px;
+  }
+
+  h2 {
+    font-size: $h2-mobile;
+    line-height: 27px;
+  }
+
+  h3 {
+    font-size: $h3-mobile;
+    line-height: 24px;
+  }
+}

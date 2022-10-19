@@ -1,0 +1,52 @@
+.main {
+  @include image("Morten Harket.png");
+  padding-top: 250px;
+  padding-bottom: 225px;
+
+  &-artist {
+
+    width: calc(100% - 40px);
+
+    &-subscribers {
+      margin: 16px 0 48px;
+
+      font-size: 16px;
+    }
+
+    &-buttons {
+      gap: 24px;
+
+      &-mix {
+        width: 200px;
+        padding: 20px 30px;
+
+        font-size: 12.8px;
+
+        background-color: $purple;
+      }
+
+      &-favorites {
+        width: 200px;
+        padding: 20px 30px;
+
+        font-size: 12.8px;
+
+        background-color: $light-brown;
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        padding-right: 16px;
+
+        filter: invert(100%);
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .main {
+    padding-top: 225px;
+  }
+}

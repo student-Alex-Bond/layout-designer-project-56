@@ -1,0 +1,41 @@
+.discography {
+  color: $light-grey;
+
+  font-size: 16px;
+
+  &-catalog {
+    margin-top: 48px;
+
+    column-gap: 50px;
+    row-gap: 25px;
+  }
+
+  &-item {
+    .album-image {
+      display: block;
+      width: 250px;
+      height: 250px;
+    }
+
+    .album-name {
+      margin-top: 18px;
+
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .discography {
+    &-item {
+      width: 137px;
+
+      .album-image {
+        width: 137px;
+        height: 137px;
+      }
+    }
+  }
+}

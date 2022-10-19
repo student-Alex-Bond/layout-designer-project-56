@@ -1,0 +1,42 @@
+.similar {
+  color: $light-grey;
+  font-size: 16px;
+
+  &-catalog {
+    margin-top: 48px;
+
+    column-gap: 50px;
+    row-gap: 25px;
+  }
+
+  &-item {
+    text-align: center;
+
+    .similar-image {
+      display: block;
+      width: 250px;
+      height: 250px;
+    }
+
+    .similar-name {
+      margin-top: 18px;
+
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .similar {
+    &-item {
+      width: 137px;
+
+      .similar-image {
+        width: 137px;
+        height: 137px;
+      }
+    }
+  }
+}

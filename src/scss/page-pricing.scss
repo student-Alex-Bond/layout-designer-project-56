@@ -1,0 +1,99 @@
+.cards {
+  gap: 50px;
+
+  margin-bottom: 40px;
+
+  color: $white;
+
+  .card {
+    box-sizing: border-box;
+    max-width: 366.66px;
+    padding: 1.5rem;
+
+    border-radius: 1rem;
+
+    &-name {
+      margin-bottom: 200px;
+
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    .flex-start {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &-price {
+      height: 64px;
+      margin: 0;
+      margin-bottom: 40px;
+      padding: 0;
+      border: none;
+
+      font-size: 64px;
+      line-height: 64px;
+
+      &-currency {
+        font-size: 32px;
+        line-height: 48px;
+        text-transform: uppercase;
+        vertical-align: super;
+      }
+    }
+
+    &-button {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px 30px;
+
+      border: 1px solid $white;
+      border-radius: 5px;
+
+      color: $white;
+      font-size: 16px;
+
+      text-transform: uppercase;
+    }
+
+    &-description {
+      margin-top: 64px;
+      margin-bottom: 40px;
+
+      font-size: 12.8px;
+    }
+  }
+
+  .free-sub {
+    @include image("subscribe_1.png");
+  }
+
+  .standard-sub {
+    @include image("subscribe_2.png");
+  }
+
+  .premium-sub {
+    @include image("subscribe_3.png");
+  }
+
+  .subs {
+    border-radius: 1rem;
+
+    background-position: top;
+  }
+}
+
+.extra-info {
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .cards {
+    .card {
+      max-width: 100%;
+      padding-top: 1rem;
+    }
+  }
+}

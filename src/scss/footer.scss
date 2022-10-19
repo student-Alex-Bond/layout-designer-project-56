@@ -1,0 +1,77 @@
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.light-grey {
+  color: $light-grey;
+}
+
+.footer {
+  font-size: 16px;
+
+  &-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    padding-top: 62px;
+    padding-bottom: 72px;
+
+    column-gap: 40px;
+    row-gap: 30px;
+
+    .nav-heading {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    &-social-media-icons {
+      column-gap: 24px;
+
+      .google-icon {
+        width: 26px;
+        height: 17px;
+      }
+
+      .twitter-icon {
+        width: 22px;
+        height: 19px;
+      }
+
+      .facebook-icon {
+        width: 12px;
+        height: 20px;
+      }
+
+      .instagram-icon {
+        width: 19px;
+        height: 20px;
+      }
+    }
+
+    .mb-15 {
+      margin-bottom: 15px;
+    }
+  }
+
+  &-nav {
+    padding: 40px 0 48px;
+
+    border-top: 1px solid $light-grey;
+
+    &-list {
+      column-gap: 16px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    &-links {
+      padding-bottom: 75px;
+    }
+
+    &-nav-list {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}
