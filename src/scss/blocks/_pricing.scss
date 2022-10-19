@@ -1,0 +1,24 @@
+@import "components/pricing-item";
+
+.pricing-section {
+	padding-top: 100px;
+
+	h2 {
+		margin-top: 0;
+		margin-bottom: 48px;
+	}
+}
+
+.pricing {
+	&.flex {
+		gap: 50px;
+		justify-content: space-between;
+
+		@media (max-width: $md-width) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	margin-bottom: 40px;
+}

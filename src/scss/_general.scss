@@ -1,0 +1,215 @@
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin content-position-center {
+  margin: 0 auto;
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+}
+
+@mixin container {
+  @include content-position-center;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: $main-text-color;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn {
+  display: block;
+  color: $main-text-color;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.br-radius-3 {
+  border-radius: 3px;
+}
+
+.br-radius-5 {
+  border-radius: 5px;
+}
+
+.br-radius-32 {
+  border-radius: 32px;
+}
+
+.border-main-color {
+  border: 1px solid $main-text-color;
+}
+
+.border-white {
+  border: 1px solid #fff;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.text-grey {
+  color: $grey;
+}
+
+.uppercase {
+  @include uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.bg-green {
+  background: $green;
+}
+
+.bg-red {
+  background: $red;
+}
+
+.bg-purple {
+  background: $purple;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-cover {
+  background-size: cover;
+}  
+
+.text-xs {
+  font-size: $text-xs;
+}
+
+.text-sm {
+  font-size: $text-sm;
+}
+
+.text-2 {
+  font-size: $text-2;
+}
+
+.text-3 {
+  font-size: $text-3;
+}
+
+.text-4 {
+  font-size: $text-4;
+}
+
+.text-5 {
+  font-size: $text-5;
+}
+
+.text-6 {
+  font-size: $text-6;
+}
+
+.text-7 {
+  font-size: $text-7;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h1 {
+  font: bold 60px/90px Roboto, sans-serif;
+  @include uppercase;
+  //@include reset;
+
+  @media (max-width: $phone-width) {
+      font-size: 30px;
+      line-height: 45px;
+  }
+}
+
+h2 {
+  font: bold 38px/57px Roboto, sans-serif;
+  @include uppercase;
+  //@include reset;
+
+  @media (max-width: $phone-width) {
+      font-size: 18px;
+      line-height: 27px;
+  }
+}
+
+h3 {
+  font: 400 24px/45px Roboto, sans-serif;
+  //@include reset;
+
+  @media (max-width: $phone-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+}
+
+h4 {
+  font: bold 18px/27px Roboto, sans-serif;
+  //@include reset;
+
+  @media (max-width: $phone-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+body {
+  @include reset;
+  
+  font: 16px/1.5 Roboto, sans-serif;
+  background: $black;
+  color: $main-text-color;    
+}
+
+.container {
+  @include container;
+}
+
+.flex {
+  display: flex;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
