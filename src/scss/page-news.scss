@@ -1,3 +1,5 @@
+@import "variables";
+
 .news {
   gap: 65px;
 
@@ -18,7 +20,6 @@
           font-weight: normal;
           font-size: 30px;
           line-height: 45px;
-          text-transform: none;
           text-transform: capitalize;
         }
 
