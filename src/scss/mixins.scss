@@ -1,0 +1,10 @@
+@mixin heading() {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@mixin image($name) {
+  background-image: url("../images/#{$name}");
+  background-position: center;
+  background-size: cover;
+}
