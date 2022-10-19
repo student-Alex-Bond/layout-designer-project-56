@@ -1,12 +1,23 @@
 @import "variables";
-@import "mixins";
+
 @import "general";
-@import "header";
-@import "pricing";
-@import "news";
-@import "page-app";
-@import "footer";
-@import "artist-header";
-@import "popular";
-@import "discography";
-@import "similar-artists";
+
+@import "blocks/header";
+
+@import "blocks/footer";
+
+@import "blocks/banner";
+
+@import "blocks/pricing";
+
+@import "blocks/news";
+
+@import "blocks/mobile";
+
+@import "blocks/artist-info";
+
+@import "blocks/popular-tracks";
+
+@import "blocks/discography";
+
+@import "blocks/similar-section";
