@@ -16,7 +16,6 @@
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     padding-top: 62px;
     padding-bottom: 72px;
-
     column-gap: 40px;
     row-gap: 30px;
 
@@ -56,7 +55,6 @@
 
   &-nav {
     padding: 40px 0 48px;
-
     border-top: 1px solid $light-grey;
 
     &-list {
